@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		236B187121B51B3E00D07762 /* XDXTestPThreadHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 236B187021B51B3E00D07762 /* XDXTestPThreadHandler.m */; };
+		236B187421B5221C00D07762 /* XDXTestAPThreadHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 236B187321B5221C00D07762 /* XDXTestAPThreadHandler.m */; };
 		23A46D7421ACFEB1009A23C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A46D7321ACFEB1009A23C1 /* AppDelegate.m */; };
 		23A46D7721ACFEB1009A23C1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A46D7621ACFEB1009A23C1 /* ViewController.m */; };
 		23A46D7A21ACFEB1009A23C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23A46D7821ACFEB1009A23C1 /* Main.storyboard */; };
 		23A46D7C21ACFEBD009A23C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23A46D7B21ACFEBD009A23C1 /* Assets.xcassets */; };
 		23A46D7F21ACFEBD009A23C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23A46D7D21ACFEBD009A23C1 /* LaunchScreen.storyboard */; };
 		23A46D8221ACFEBD009A23C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A46D8121ACFEBD009A23C1 /* main.m */; };
+		23A46D8A21ACFF2B009A23C1 /* XDXPThreadHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = 23A46D8921ACFF2B009A23C1 /* XDXPThreadHandler.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		236B186E21B5144000D07762 /* log4cplus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = log4cplus.h; sourceTree = "<group>"; };
+		236B186F21B51B3E00D07762 /* XDXTestPThreadHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDXTestPThreadHandler.h; sourceTree = "<group>"; };
+		236B187021B51B3E00D07762 /* XDXTestPThreadHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDXTestPThreadHandler.m; sourceTree = "<group>"; };
+		236B187221B5221C00D07762 /* XDXTestAPThreadHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDXTestAPThreadHandler.h; sourceTree = "<group>"; };
+		236B187321B5221C00D07762 /* XDXTestAPThreadHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDXTestAPThreadHandler.m; sourceTree = "<group>"; };
 		23A46D6F21ACFEB1009A23C1 /* XDXiOSEncapsulatePThread.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XDXiOSEncapsulatePThread.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A46D7221ACFEB1009A23C1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		23A46D7321ACFEB1009A23C1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +34,8 @@
 		23A46D7E21ACFEBD009A23C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23A46D8021ACFEBD009A23C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23A46D8121ACFEBD009A23C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		23A46D8821ACFF2B009A23C1 /* XDXPThreadHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDXPThreadHandler.h; sourceTree = "<group>"; };
+		23A46D8921ACFF2B009A23C1 /* XDXPThreadHandler.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = XDXPThreadHandler.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 		23A46D7121ACFEB1009A23C1 /* XDXiOSEncapsulatePThread */ = {
 			isa = PBXGroup;
 			children = (
+				236B186E21B5144000D07762 /* log4cplus.h */,
 				23A46D7221ACFEB1009A23C1 /* AppDelegate.h */,
 				23A46D7321ACFEB1009A23C1 /* AppDelegate.m */,
 				23A46D7521ACFEB1009A23C1 /* ViewController.h */,
@@ -67,6 +78,12 @@
 				23A46D7D21ACFEBD009A23C1 /* LaunchScreen.storyboard */,
 				23A46D8021ACFEBD009A23C1 /* Info.plist */,
 				23A46D8121ACFEBD009A23C1 /* main.m */,
+				23A46D8821ACFF2B009A23C1 /* XDXPThreadHandler.h */,
+				23A46D8921ACFF2B009A23C1 /* XDXPThreadHandler.mm */,
+				236B186F21B51B3E00D07762 /* XDXTestPThreadHandler.h */,
+				236B187021B51B3E00D07762 /* XDXTestPThreadHandler.m */,
+				236B187221B5221C00D07762 /* XDXTestAPThreadHandler.h */,
+				236B187321B5221C00D07762 /* XDXTestAPThreadHandler.m */,
 			);
 			path = XDXiOSEncapsulatePThread;
 			sourceTree = "<group>";
@@ -141,8 +158,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23A46D8A21ACFF2B009A23C1 /* XDXPThreadHandler.mm in Sources */,
 				23A46D7721ACFEB1009A23C1 /* ViewController.m in Sources */,
 				23A46D8221ACFEBD009A23C1 /* main.m in Sources */,
+				236B187121B51B3E00D07762 /* XDXTestPThreadHandler.m in Sources */,
+				236B187421B5221C00D07762 /* XDXTestAPThreadHandler.m in Sources */,
 				23A46D7421ACFEB1009A23C1 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +308,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 769TK3DTRY;
 				INFOPLIST_FILE = XDXiOSEncapsulatePThread/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +326,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 769TK3DTRY;
 				INFOPLIST_FILE = XDXiOSEncapsulatePThread/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
