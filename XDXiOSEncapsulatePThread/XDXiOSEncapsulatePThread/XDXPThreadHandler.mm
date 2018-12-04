@@ -12,7 +12,7 @@
 
 static const char ModuleName[30] = "XDXBaseThread";
 
-#define TVUThreadName   "XDXBaseThread"
+#define XDXThreadName   "XDXBaseThread"
 #define XDXUSleepOneSec 1000000
 
 @interface XDXPThreadHandler ()
@@ -68,15 +68,15 @@ void * doBaseThreadTask(void *param) {
 - (void)startBaseThreadTask {
     [self initBaseThread];
     pthread_create(&_baseThread, NULL, doBaseThreadTask, (__bridge_retained void *)self);
-    log4cplus_error("TVU_Router", "%s - Start send BaseThread info thread !",ModuleName);
+    log4cplus_error("XDXPThreadHandler", "%s - Start send BaseThread info thread !",ModuleName);
 }
 
 - (void)stopBaseThreadTaskThread {
     if (_baseThread) {
-        log4cplus_error("TVU_Router", "%s - Stop send BaseThread thread !",ModuleName);
+        log4cplus_error("XDXPThreadHandler", "%s - Stop send BaseThread thread !",ModuleName);
         [self freeResource];
     }else {
-        log4cplus_error("TVU_Router", "%s - Stop send BaseThread thread Failed, The base thread was destoryed!",ModuleName);
+        log4cplus_error("XDXPThreadHandler", "%s - Stop send BaseThread thread Failed, The base thread was destoryed!",ModuleName);
     }
 }
 
@@ -113,16 +113,16 @@ void * doBaseThreadTask(void *param) {
     
     int err = pthread_join(_baseThread, NULL);
     if (err != 0) {
-        log4cplus_error("TVU_Router", "%s - Destory send BaseThread thread faild. status : %d",ModuleName,err);
+        log4cplus_error("XDXPThreadHandler", "%s - Destory send BaseThread thread faild. status : %d",ModuleName,err);
     }else {
-        log4cplus_error("TVU_Router", "%s - Destory send BaseThread thread !",ModuleName);
+        log4cplus_error("XDXPThreadHandler", "%s - Destory send BaseThread thread !",ModuleName);
     }
     
     _baseThread  = NULL;
     _isStopBaseThread  = false;
     _isPauseBaseThread = false;
     
-    log4cplus_error("TVU_Router", "%s - Free send BaseThread info thread !",ModuleName);
+    log4cplus_error("XDXPThreadHandler", "%s - Free send BaseThread info thread !",ModuleName);
 }
 
 - (void)doBaseThreadTask {
